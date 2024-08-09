@@ -191,7 +191,7 @@ AFRAME.registerComponent('firework',
 		
 		// particles both shrink and fade during last moments
 		this.particleBurst.setAttribute("spe-particles", "opacity", [1, 1, 1, 0]);
-		// this.particleBurst.setAttribute("spe-particles", "size", [1, 1, 1, 0]);
+		this.particleBurst.setAttribute("spe-particles", "size", [3, 3, 3, 0]);
 		
 		let particleCount = Math.floor( randomUniform(100, 999) );
 		this.particleBurst.setAttribute("spe-particles", "particleCount", particleCount);
